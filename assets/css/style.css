@@ -1,13 +1,34 @@
 html {
     box-sizing: border-box;
-    background: #ffc600;
-    font-family: 'helvetica neue';
+    font-family: 'PlaylistScript';
     font-size: 20px;
     font-weight: 200;
+  }
+body{
+  background: url(../images/bkgd.jpg) bottom center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  height:100%;
+}
+
+
+  @font-face{
+    font-family: 'PlaylistScript';
+    src: url(../font/Playlist\ Script.otf);
   }
   
   *, *:before, *:after {
     box-sizing: inherit;
+  }
+
+  h1{
+    font-family: 'PlaylistScript';
+    margin: auto;
+    margin-top: 80px;
+    color: #31c4bd;
+    font-size: 110px;
+    text-align: center;
   }
   
   input {
@@ -39,7 +60,7 @@ html {
     margin: 0;
     padding: 0;
     position: relative;
-    /*perspective: 20px;*/
+    /* perspective: 20px; */
   }
   
   .suggestions li {
@@ -57,12 +78,12 @@ html {
   
   .suggestions li:nth-child(even) {
     transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
-    background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+    /* background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%); */
   }
   
   .suggestions li:nth-child(odd) {
     transform: perspective(100px) rotateX(-3deg) translateY(3px);
-    background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+    /* background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%); */
   }
   
   span.population {
@@ -70,5 +91,26 @@ html {
   }
   
   .hl {
-    background: #ffc600;
+    background: #31c4bd;
+  }
+
+  footer{
+    margin-top: 230px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* a{
+    color: #31c4bd;
+  } */
+
+  img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  p{
+    color: #31c4bd;
   }
